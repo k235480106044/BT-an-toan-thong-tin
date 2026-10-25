@@ -105,7 +105,6 @@ Bài 2:
 
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212054" src="https://github.com/user-attachments/assets/66b2651c-9444-433c-870f-81a494a84abe" />
 
-2.
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212347" src="https://github.com/user-attachments/assets/23ab68f6-4dff-46f8-bed8-499660b16f92" />
 
 
