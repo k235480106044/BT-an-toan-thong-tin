@@ -84,13 +84,13 @@ BÀI LÀM
 
 Bài 1:
 
-1.
+1. Người dùng nhập lựa chọn 1 trên màn hình dòng lệnh để yêu cầu hệ thống tạo một khóa bí mật mới. Chương trình thực hiện khởi tạo và sinh khóa ngẫu nhiên với độ dài khóa là 128 bit, sau đó mã hóa và hiển thị kết quả trực quan dưới dạng chuỗi Base64 ngay trên giao diện bảng điều khiển.
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 203339" src="https://github.com/user-attachments/assets/1f71bc34-f138-4398-a413-e90011ebe02c" />
 
-2. 
+2. Người dùng nhập lựa chọn 2 và tiến hành chỉ định tên tệp/đường dẫn lưu trữ khóa là aes.key. Hệ thống tiếp nhận đường dẫn, ghi dữ liệu khóa hiện tại đang nằm trên bộ nhớ xuống tệp tin trên ổ đĩa và phản hồi lại bằng dòng thông báo xác nhận thành công.
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 203353" src="https://github.com/user-attachments/assets/8af0549f-8c43-4bdf-9502-c24a3528949b" />
 
-3.
+3. Người dùng nhập lựa chọn 3 và cung cấp lại đường dẫn tệp aes.key vừa lưu trước đó.
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 203537" src="https://github.com/user-attachments/assets/9dd2328d-8dc4-4c17-9edd-40a60f2abbf5" />
 
 4. 
@@ -98,7 +98,8 @@ Bài 1:
 
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 203729" src="https://github.com/user-attachments/assets/aaf89cbd-0bcc-4cad-a929-64f8c5576ef3" />
 
-5. Kết luận: 
+5. Kết luận
+
 Tính đúng đắn: Thuận nghịch hoàn toàn (không mất mát dữ liệu), kiểm tra từng byte trên các mức kích thước 100 MB, 500 MB và 1 GB đều khớp tuyệt đối.
 
 Kích thước file mã hóa: Luôn lớn hơn file gốc đúng 32 byte (16 byte IV + 16 byte đệm PKCS#7), chi phí lưu trữ phát sinh không đáng kể.
@@ -111,16 +112,14 @@ Giải mã thường nhanh hơn mã hóa (đạt tới ~1,49 GB/s ở file 1 GB)
 
 Bài 2:
 
-1. 
+1 và 2. 
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 204527" src="https://github.com/user-attachments/assets/1be334f3-d373-4c8c-b3fd-8f12dde7d101" />
 
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212054" src="https://github.com/user-attachments/assets/66b2651c-9444-433c-870f-81a494a84abe" />
 
-2.
+3.
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212347" src="https://github.com/user-attachments/assets/23ab68f6-4dff-46f8-bed8-499660b16f92" />
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212428" src="https://github.com/user-attachments/assets/f8be8392-2d4b-41f3-b358-03fe23090482" />
-
-3.
 
 4.
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212531" src="https://github.com/user-attachments/assets/7ca74995-e601-4da9-bdea-6029a8e0ac5f" />
