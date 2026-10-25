@@ -93,7 +93,7 @@ Bài 1:
 3. Người dùng nhập lựa chọn 3 và cung cấp lại đường dẫn tệp aes.key vừa lưu trước đó.
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 203537" src="https://github.com/user-attachments/assets/9dd2328d-8dc4-4c17-9edd-40a60f2abbf5" />
 
-4. 
+4. Người dùng sử tính năng mã hóa một chuỗi văn bản thông thường bằng cách sử dụng khóa bí mật đã được nạp sẵn từ tệp tin ở các bước trước đó
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 203706" src="https://github.com/user-attachments/assets/2d1407d4-aaa2-492c-b483-6007cbedb515" />
 
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 203729" src="https://github.com/user-attachments/assets/aaf89cbd-0bcc-4cad-a929-64f8c5576ef3" />
