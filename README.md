@@ -93,12 +93,13 @@ Bài 1:
 3.
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 203537" src="https://github.com/user-attachments/assets/9dd2328d-8dc4-4c17-9edd-40a60f2abbf5" />
 
-4. <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 203706" src="https://github.com/user-attachments/assets/2d1407d4-aaa2-492c-b483-6007cbedb515" />
+4. 
+<img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 203706" src="https://github.com/user-attachments/assets/2d1407d4-aaa2-492c-b483-6007cbedb515" />
 
-5. <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 203729" src="https://github.com/user-attachments/assets/aaf89cbd-0bcc-4cad-a929-64f8c5576ef3" />
+<img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 203729" src="https://github.com/user-attachments/assets/aaf89cbd-0bcc-4cad-a929-64f8c5576ef3" />
 
-6. 
-<img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 204527" src="https://github.com/user-attachments/assets/ac82a189-ba8c-4501-94d3-55840ed5a620" />
-<img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212054" src="https://github.com/user-attachments/assets/889806b6-d737-4ed4-a0be-ee538c63a311" />
+Bài 2:
+
+1. 
 
 
