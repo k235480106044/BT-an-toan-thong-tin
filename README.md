@@ -98,6 +98,17 @@ Bài 1:
 
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 203729" src="https://github.com/user-attachments/assets/aaf89cbd-0bcc-4cad-a929-64f8c5576ef3" />
 
+5. Kết luận: 
+Tính đúng đắn: Thuận nghịch hoàn toàn (không mất mát dữ liệu), kiểm tra từng byte trên các mức kích thước 100 MB, 500 MB và 1 GB đều khớp tuyệt đối.
+
+Kích thước file mã hóa: Luôn lớn hơn file gốc đúng 32 byte (16 byte IV + 16 byte đệm PKCS#7), chi phí lưu trữ phát sinh không đáng kể.
+
+Tốc độ & Thời gian:Thời gian xử lý tăng tuyến tính theo kích thước file ($O(n)$) (ví dụ mã hóa 1 GB chỉ mất khoảng 1,22 giây.Tốc độ mã hóa ổn định ở mức 700–900 MB/s). 
+
+Giải mã thường nhanh hơn mã hóa (đạt tới ~1,49 GB/s ở file 1 GB) do tính chất song song của chế độ CBC.Bộ nhớ (RAM): Sử dụng cơ chế đọc/ghi theo luồng (buffer 1 MB), giúp lượng RAM tiêu thụ luôn thấp và ổn định, không phụ thuộc vào dung lượng file
+<img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-24 174428" src="https://github.com/user-attachments/assets/6a4fb35c-d3f4-404f-8ea4-47b496d07042" />
+
+
 Bài 2:
 
 1. 
@@ -105,7 +116,33 @@ Bài 2:
 
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212054" src="https://github.com/user-attachments/assets/66b2651c-9444-433c-870f-81a494a84abe" />
 
+2.
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212347" src="https://github.com/user-attachments/assets/23ab68f6-4dff-46f8-bed8-499660b16f92" />
+<img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212428" src="https://github.com/user-attachments/assets/f8be8392-2d4b-41f3-b358-03fe23090482" />
+
+3.
+
+4.
+<img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212531" src="https://github.com/user-attachments/assets/7ca74995-e601-4da9-bdea-6029a8e0ac5f" />
+
+<img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212639" src="https://github.com/user-attachments/assets/bec92426-7cec-4e60-a62d-81a38eeb9f37" />
+
+5.
+<img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212931" src="https://github.com/user-attachments/assets/098e03a7-4e28-41aa-9cd3-faf86969f2f7" />
+
+6.
+<img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 213129" src="https://github.com/user-attachments/assets/191c940e-5409-4916-9aea-e49b4dada85c" />
+
+7. 
+<img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 213725" src="https://github.com/user-attachments/assets/e801b890-8500-4359-acbd-9545c09eb36b" />
+
+8.
+<img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 213957" src="https://github.com/user-attachments/assets/202ed526-9887-408c-9bdc-bb17d56ba07d" />
+
+
+
+
+
 
 
 
