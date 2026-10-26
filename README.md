@@ -112,30 +112,48 @@ Giải mã thường nhanh hơn mã hóa (đạt tới ~1,49 GB/s ở file 1 GB)
 
 Bài 2:
 
-1 và 2. 
+1 và 2. Khởi tạo tham số cấu hình: Chương trình cho phép người dùng lựa chọn độ dài khóa (ví dụ: 1024 bit) và sử dụng định dạng tiêu chuẩn PKCS#1 để biểu diễn khóa RSA.
+Thuật toán sinh khóa bất đối xứng: Hệ thống tính toán và sinh ra một cặp khóa toán học liên kết ngặt nghèo với nhau gồm:
+Khóa công khai (Public Key): Hiển thị qua định dạng, dùng để chia sẻ công khai cho việc mã hóa hoặc xác thực chữ ký.
+Khóa bí mật (Private Key): Hiển thị qua định dạng, được giữ bảo mật hoàn toàn dùng để giải mã hoặc tạo chữ ký số.
+Lưu trữ tệp PEM: Sau khi sinh thành công, chương trình tự động ghi cặp khóa này ra các tệp tin lưu trữ riêng biệt trên ổ đĩa (public.pem và private.pem) để phục vụ cho các tiến trình mã hóa lai hoặc kiểm thử tiếp theo.
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 204527" src="https://github.com/user-attachments/assets/1be334f3-d373-4c8c-b3fd-8f12dde7d101" />
 
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212054" src="https://github.com/user-attachments/assets/66b2651c-9444-433c-870f-81a494a84abe" />
 
-3.
+3. Hình ảnh thể hiện tính năng phân tích cấu trúc nhị phân theo chuẩn ASN.1 DER của tệp khóa công khai (public.pem) trong chương trình C#. 
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212347" src="https://github.com/user-attachments/assets/23ab68f6-4dff-46f8-bed8-499660b16f92" />
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212428" src="https://github.com/user-attachments/assets/f8be8392-2d4b-41f3-b358-03fe23090482" />
 
-4.
+4. Hình ảnh thể hiện chức năng nhập, phân tích và trích xuất chi tiết các tham số toán học cấu thành khóa công khai (public.pem) và khóa bí mật (private.pem) trong chương trình RSA. 
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212531" src="https://github.com/user-attachments/assets/7ca74995-e601-4da9-bdea-6029a8e0ac5f" />
 
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212639" src="https://github.com/user-attachments/assets/bec92426-7cec-4e60-a62d-81a38eeb9f37" />
 
-5.
+5. Thao tác: Người dùng chọn tùy chọn 5 trên menu để mã hóa khóa AES bằng khóa công khai RSA đã nạp.
+
+Dữ liệu đầu vào: Chương trình tự sinh một chuỗi dữ liệu khóa AES-256 ngẫu nhiên gồm 32 byte, hiển thị dưới dạng chuỗi Base64 
+
+Nguyên lý mã hóa bất đối xứng: Dùng khóa công khai (Public Key) của thuật toán RSA để mã hóa trực tiếp khối dữ liệu khóa AES này.
+
+Kết quả đầu ra: Tạo ra một bản mã (Ciphertext) có độ dài 128 byte, hiển thị dưới dạng chuỗi Base64 dài 
+
+Lưu trữ tệp: Bản mã này được tự động ghi xuống tệp tin cipher.b64.txt trên ổ đĩa, và chương trình thông báo xác nhận Đã lưu.
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 212931" src="https://github.com/user-attachments/assets/098e03a7-4e28-41aa-9cd3-faf86969f2f7" />
 
-6.
+6. Hệ thống sử dụng khóa bí mật (Private Key) tương ứng của thuật toán RSA để giải mã khối dữ liệu bản mã. Khôi phục lại thành công chuỗi dữ liệu gốc (khóa AES 32 byte), hiển thị dưới dạng Base64
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 213129" src="https://github.com/user-attachments/assets/191c940e-5409-4916-9aea-e49b4dada85c" />
 
-7. 
+7. Phần A: Benchmark RSA chuẩn của .NET: Thực hiện đo thời gian sinh khóa, mã hóa (dùng khóa công khai) và giải mã (dùng khóa bí mật với CRT) trên các mức kích thước 1024, 2048, 3072 và 4096 bit.
+
+Phần B: Phép tính lũy thừa modular thô: Phép toán dùng CRT giúp tăng tốc độ giải mã vượt trội so với tính toán thô thông thường.
+
+Phần C: Ảnh hưởng độ dài số mũ công khai: Đo đạc thời gian xử lý khi thay đổi kích thước số mũ $e$ từ 2 bit lên đến 2048 bit trên modulus 2048 bit.
+
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 213725" src="https://github.com/user-attachments/assets/e801b890-8500-4359-acbd-9545c09eb36b" />
 
-8.
+8. Chương trình tự động chạy thực nghiệm 1000 lần, mỗi lần tiến hành thay đổi đúng 1 bit ở dữ liệu đầu vào và quan sát sự thay đổi trên kết quả mã băm đầu ra (SHA-256).
+Kết quả thống kê: Số bit đầu ra thay đổi trung bình là 128.19 / 256 bit (chiếm 50.07%), với độ lệch chuẩn là 8.32 (nhỏ nhất là 102, lớn nhất là 160).
 <img width="2559" height="1599" alt="Ảnh chụp màn hình 2026-10-23 213957" src="https://github.com/user-attachments/assets/202ed526-9887-408c-9bdc-bb17d56ba07d" />
 
 
